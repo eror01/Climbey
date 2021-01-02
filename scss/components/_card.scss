@@ -1,0 +1,110 @@
+.gear {
+    .bg__video{
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        overflow: hidden;
+        opacity: .3;
+        &__content {
+        width: 100%;
+        object-fit: cover;
+        }
+    }
+    .card {
+        position: relative;
+        width: 30rem;
+        height: 45rem;
+        z-index: 100;
+        &__item {
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+            
+
+            &:hover {
+                transform: rotateY(180deg);
+            }
+        }
+
+        &__item-2 {
+            position: absolute;
+            top: 50%;
+            left: 73rem;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+            
+
+            &:hover {
+                transform: rotateY(180deg);
+            }
+        }
+
+        &__item-3 {
+            position: absolute;
+            top: 50%;
+            left: 130rem;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+            
+
+            &:hover {
+                transform: rotateY(180deg);
+            }
+        }
+
+        &__front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            color: #333;
+            text-align: center;
+            background: url(/dist/img/card-1.jpg) no-repeat center center/cover;
+            font-size: 1.5rem;
+
+            img{
+                width: 90%;
+                margin: 3rem 2rem;
+            }
+
+            span{
+                font-size: 1.5rem;
+            }
+        }
+
+        &__back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            color: #000;
+            text-align: center;
+            transform: rotateY(180deg);
+            background: url(/dist/img/card-1-blur.jpeg) no-repeat center center/cover;
+            
+            h3{
+                font-size: 1.5rem;
+                margin-top: 14rem;
+                margin-bottom: 4rem;
+            }
+
+            span{
+                color: #fff;
+                background-color: rgba(0,0,0, .4);
+                font-size: 1.3rem;
+                margin: 0 1rem;
+                padding: .2rem .4rem;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,50 @@
+.heading {
+    width: 100%;
+    height: 90vh;
+
+    &__image {
+        width: 100%;
+        height: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .heading__overlay {
+            position: absolute;
+            bottom: 10%;
+            left: 30%;
+            height: 20rem;
+            width: 65rem;
+            background-color: rgba(255,255,255, .8);
+            clip-path: polygon(50% 0%, 72% 0, 84% 46%, 92% 76%, 98% 100%, 50% 100%, 22% 100%, 0 100%, 0% 35%, 0 0);
+            color: #000;
+            text-align: left;
+            
+            h2{
+                margin-top: 2rem;
+                font-size: 2.5rem;
+                margin-left: .2rem;
+            }
+            
+            p{
+                font-size: 1.5rem;
+                width: 50rem;
+                margin-left: .2rem; 
+            }
+        }
+
+        .heading__more {
+            position: relative;
+            font-size: 1.3rem;
+            left: 45rem;
+            text-decoration: none;
+            border: 2px solid #000;
+            background-color: rgba(0,0,0,.8);
+            color: #fff;
+            border-radius: 5rem;
+            padding: .8rem 1rem;
+        }
+    }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <title>Climbey</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navigation">
+        <img src="/dist/img/logo2.png" alt="" />
+        <div class="navigation__openMenu"><i class="fa fa-bars fa-2x"></i></div>
+        <ul class="navigation__links">
+          <li class="navigation__link">
+            <a href="#home" class="navigation__item">Home</a>
+          </li>
+          <li class="navigation__link">
+            <a href="#lodge" class="navigation__item">Lodging</a>
+          </li>
+          <li class="navigation__link">
+            <a href="#gear" class="navigation__item">Gear</a>
+          </li>
+          <li class="navigation__link">
+            <a href="#about" class="navigation__item">About Us</a>
+          </li>
+          <div class="navigation__closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+      </nav>
+
+      <section id="home" class="home">
+        <div class="home__content">
+          <h1 class="home__heading">Climb With Us Now!</h1>
+          <p class="home__text">Your Life Will Be Much Healthier</p>
+          <a href="climb.html" class="btn-climb"
+            >Climbs <i class="fas fa-mountain"></i
+          ></a>
+        </div>
+      </section>
+
+      <section id="lodge" class="lodge">
+        <div class="lodge__form">
+          <form class="form">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form__name"
+              placeholder="Full Name"
+              required
+              autocomplete="off"
+            /><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form__email"
+              placeholder="Email"
+              required
+              autocomplete="off"
+            /><br />
+            <input
+              type="date"
+              id="date"
+              name="date"
+              class="form__date"
+              required
+            /><br />
+            <label for="locations" id="locations" class="form__locations"
+              >Chose Your Destination:</label
+            >
+            <select
+              name="mountains"
+              id="location"
+              class="form__select"
+              required
+            >
+              <option value="chimbo" class="form__option">Chimborazo</option>
+              <option value="cho">Cho Oyu</option>
+              <option value="denali">Denali</option>
+              <option value="glacier">Glacier Peak</option>
+              <option value="mont">Mont Blanc</option>
+              <option value="adams">Mont Adams</option>
+              <option value="olymp">Mont Olympus</option>
+            </select
+            ><br />
+            <input type="submit" value="Submit" class="form__submit" />
+          </form>
+        </div>
+
+        <div class="cabin">
+          <div class="cabin__img">
+            <img src="/dist/img/cabin-1.jpg" alt="" class="cabin__img-1" />
+            <img src="/dist/img/cabin-4.jpg" alt="" class="cabin__img-2" />
+            <img src="/dist/img/cabin-5.jpg" alt="" class="cabin__img-3" />
+          </div>
+        </div>
+      </section>
+
+      <section id="gear" class="gear">
+        <div class="card">
+          <div class="bg__video">
+            <video class="bg__content" autoplay muted loop>
+              <source src="/dist/img/bg-video2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card__item">
+            <div class="card__front">
+              <h2>High Altitude Boots</h2>
+              <img src="/dist/img/boot-2.png" alt="" />
+              <span>For High Altitudes</span><br />
+              <span>$59.99</span>
+            </div>
+
+            <div class="card__back">
+              <h3>Sizes Left:</h3>
+              <span>XS</span>
+              <span>L</span>
+              <span>XL</span>
+              <span>XXL</span>
+
+              <a href="#" class="btn-order">More Details</a>
+            </div>
+          </div>
+
+          <div class="card__item-2">
+            <div class="card__front">
+              <h2>Cuillin Trekking Poles</h2>
+              <img src="/dist/img/pol-2.png" alt="" />
+              <span>For Steepy Mountains</span><br />
+              <span>$45.99</span>
+            </div>
+
+            <div class="card__back">
+              <h3>Sizes Left:</h3>
+              <span>XS</span>
+              <span>S</span>
+              <span>L</span>
+              <span>XL</span>
+
+              <a href="#" class="btn-order">More Details</a>
+            </div>
+          </div>
+
+          <div class="card__item-3">
+            <div class="card__front">
+              <h2>Magma 45</h2>
+              <img src="/dist/img/back-1.png" alt="" />
+              <span>Cold Peaks</span><br />
+              <span>$149.99</span>
+            </div>
+
+            <div class="card__back">
+              <h3>Sizes Left:</h3>
+              <span>L</span>
+              <span>XL</span>
+              <span>XXL</span>
+              <span>XXXL</span>
+
+              <a href="#" class="btn-order">More Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h1>About Us</h1>
+        <div class="founder">
+          <div class="founder__image">
+            <img src="/dist/img/user1.jpg" alt="" />
+            <div class="founder__overlay">
+              <div class="founder__title">Founder</div>
+              <p class="founder__info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Obcaecati, mollitia?
+              </p>
+            </div>
+          </div>
+
+
+          <div class="founder__text">
+            <h3>The Beginning</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis id pariatur illum eos adipisci aperiam doloribus
+              voluptatum modi voluptas? Vero unde aliquam porro, harum inventore
+              iure aperiam excepturi necessitatibus illum! Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Iusto doloribus ab
+              officiis, illo explicabo, accusantium quod itaque sequi repellat
+              cumque sed, necessitatibus dolore adipisci ut nemo nobis alias
+              saepe facilis!
+            </p>
+            <h3>My Experiences</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              ipsum itaque magni excepturi consequuntur illum expedita
+              aspernatur ratione veniam pariatur in dolorum quos, quis est animi
+              ipsa quae deserunt aliquam!
+            </p>
+          </div>
+      </section>
+
+      <section class="footer">
+        <div class="footer__info">
+          <p class="footer__copyright">Climbey &copy; By Eror Aleksandar</p>
+          <div class="footer__reach">
+            <i class="fas fa-map-marker-alt fa-2x"></i>Belgrade, Serbia
+            <i class="fas fa-mobile-alt fa-2x"></i>+381 63555555
+          </div>
+          <div class="footer__socials">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <script src="/dist/js/main.js"></script>
+  </body>
+</html>
